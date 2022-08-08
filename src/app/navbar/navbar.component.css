@@ -1,0 +1,28 @@
+.container-fluid{
+    width: 100%;
+    height:100%;
+    background-color: #e2dfdfcc;
+}
+.logo-container{
+    display: flex;
+   }
+
+   .logo{
+    background: #fff;
+    text-align: center;
+    width: 2.5rem;
+    min-width: 2.5rem;
+    height: 38px;
+    border-radius: 50px;
+    padding: 0.313rem;
+    font-size: 24px;
+    font-weight: 900;
+    cursor: pointer;
+    border:none;}
+
+   .logo-text{
+    margin-left: 1.5rem;
+    font-size: 24px;
+    font-weight:30;
+    color:black;
+   }

@@ -1,0 +1,23 @@
+<div class="sidenav" >
+    <div class="layer">
+    <div class="logo-container">
+        <button class="logo"><img src="/assets/image/download.png" width="40px" height="40px" style="border-radius: 50px ;    margin: -9px 0px 0px -5px;"></button>
+        <div class="logo-text" *ngIf="collapsed">Zehntech Dash</div>
+            
+        </div><hr>
+        <div class="logo-container">
+            <button class="logo1"><img src="https://cdn-icons-png.flaticon.com/512/146/146005.png" height="40px" width="40px"></button>
+            <div class="logo-text" *ngIf="collapsed" style="font-size:15px">Tania Andrew</div>
+                
+            </div><hr>
+        <ul class="sidenav-nav">
+            <li class="sidenav-nav-items"  *ngFor="let data of navData">
+                <a class="sidenav-nav-link" [routerLink]="[data.routerLink]">
+                    <i class="sidenav-link-icon" [class]="data.icon"></i>
+                    <span class="sidenav-link-text" *ngIf="collapsed">{{data.label}}</span>
+                </a>
+            </li>
+            
+        </ul>
+    </div>
+</div>
